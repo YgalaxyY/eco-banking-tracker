@@ -1,0 +1,6 @@
+{
+  "name": "Eco-Banking Tracker",
+  "description": "Экологичный онлайн-банкинг с отслеживанием CO2-выбросов и начислением Green Points за осознанные покупки.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

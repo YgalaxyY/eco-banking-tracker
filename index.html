@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сознательный Банк</title>
+    <style>
+      /* Скрытие внешних инструментовых кнопок */
+      [style*="z-index: 2147483647"] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Удаление кнопок Send element и Send console errors
+      (function removeDevToolsButtons() {
+        const observer = new MutationObserver(() => {
+          const buttons = document.querySelectorAll('button, div');
+          buttons.forEach(el => {
+            const text = el.textContent || '';
+            if (text.includes('Send element') || text.includes('Send console errors')) {
+              el.style.display = 'none';
+              el.remove();
+            }
+          });
+        });
+        observer.observe(document.body, { childList: true, subtree: true });
+      })();
+    </script>
+  </body>
+</html>
+
