@@ -6,6 +6,10 @@ An educational full-stack finance dashboard: account registration, simulated car
 
 **React + TypeScript + Express + SQLite.** This is a portfolio prototype, with no banking integration or real payments. Carbon factors, rewards and certificates are demonstration logic, not verified environmental accounting.
 
+## Project context
+
+This is a personal educational project assembled with substantial AI assistance. It is a portfolio demo for studying application structure and integrations, with the original source notices and dependency attribution retained.
+
 ## Run locally
 
 Use Node.js 22 LTS, pnpm 11 and a local development environment. SQLite uses a native module; allow its trusted package build if your package manager requests it.
